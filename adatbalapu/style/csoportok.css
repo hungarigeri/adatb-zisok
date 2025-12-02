@@ -1,0 +1,116 @@
+:root {
+    --navbarkek: #adb2d4;
+    --hatter: #c7d9dd;
+    --elemek: #eef1da;
+    --chatszin: #d5e5d5;
+    --betuszin: #2c3e50;
+  }
+  
+  body {
+    background: var(--hatter);
+    color: var(--betuszin);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding-top: 70px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 30px 0;
+    color: var(--betuszin);
+  }
+  
+  .csoport-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .csoport-kartya {
+    background-color: var(--elemek);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 3px solid black;
+    transition: transform 0.3s ease;
+  }
+  
+  .csoport-kartya:hover {
+    transform: translateY(-5px);
+  }
+  
+  .csoport-fejlec {
+    background-color: var(--navbarkek);
+    padding: 15px;
+    border-bottom: 3px solid black;
+  }
+  
+  .csoport-fejlec h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--betuszin);
+  }
+  
+  .csoport-tartalom {
+    padding: 20px;
+  }
+  
+  .csoport-tartalom p {
+    margin: 0 0 15px;
+    line-height: 1.5;
+  }
+  
+  .csoport-datum {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .csoport-lablec {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .csoport-gomb {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--chatszin);
+    color: var(--betuszin);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+    transition: background-color 0.3s ease;
+  }
+  
+  .csoport-gomb:hover {
+    background-color: var(--hatter);
+  }
+  
+  .nincs-csoport {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 50px 0;
+    color: var(--betuszin);
+  }
+  
+  @media (max-width: 768px) {
+    .csoport-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .csoport-kartya {
+      max-width: 100%;
+    }
+  }
+
+  .textarea{
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+  }

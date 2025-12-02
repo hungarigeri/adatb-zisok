@@ -1,0 +1,27 @@
+.bejegyzesek {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.bejegyzes {
+    margin-bottom: 20px;
+    
+}
+
+.bejegyzes h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.bejegyzes p {
+    margin: 10px 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.bejegyzes small {
+    color: #666;
+    font-size: 0.9em;
+}

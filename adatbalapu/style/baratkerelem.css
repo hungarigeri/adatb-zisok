@@ -1,0 +1,149 @@
+:root {
+    --navbarkek: #adb2d4;
+    --hatter: #c7d9dd;
+    --elemek: #eef1da;
+    --chatszin: #d5e5d5;
+    --betuszin: #2c3e50;
+  }
+
+#fb{
+    width:650px;
+    border:3px solid black;
+    border-radius:5px ;
+    position:relative;
+    margin-top: 50px;
+    z-index: 1;
+    background-color: var(--elemek);
+    margin: auto;
+    top: 20px;
+  }
+
+  #fb p{
+    font-family:sans-serif;
+    margin: 0 0 0 10px;
+    line-height:30px;
+  }
+  
+  #fb-top{
+    background-color: var(--chatszin);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border:2px solid black;
+
+  }
+  #fb-top a{
+    position:absolute;
+    top:0px;
+    right: 0px;
+    padding: 0 5px;
+  }
+  
+  #fb img{
+    position: absolute;
+  left: 10px;
+  top: 40px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  }
+  
+  #info{
+    position: absolute;
+    left: 120px;
+    top: 50px;
+    color: var(--betuszin);
+    line-height: 25px;
+    font-size: 18px;
+  }
+  
+  #info {
+    color:var(--betuszin);
+    line-height:25px;
+    font-size:18px;
+  }
+  
+  #info span{
+    color:#777;
+    font-size:14px;
+  }
+  
+  #button-block{
+    position: absolute;
+  right: 10px;
+  top: 85px;
+  }
+  
+  #button-block div{
+    display:inline-block;
+  }
+  
+  #confirm, #delete{
+    background-color:#4267B2;
+    color:white;
+    padding:7px;
+    border-radius:2px;
+    margin-right:10px;
+    font-family:sans-serif;
+    border:3px solid black;
+  }
+  
+  #delete{
+    color:white;
+    background-color:red;
+    border:3px solid black;
+    padding:6px;
+    margin-right:0;
+  }
+  
+  #button-block div:hover{
+    opacity:.8 !important;
+    cursor:pointer !important;
+    background-color: var(--navbarkek)!important;
+  }
+
+.kerelem-box {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-bottom: 3px solid black;
+    margin-top: 10px;
+  }
+
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.popup-close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup-content {
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

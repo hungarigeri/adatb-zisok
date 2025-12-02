@@ -1,0 +1,353 @@
+:root {
+  --navbarkek: #adb2d4;
+  --hatter: #c7d9dd;
+  --elemek: #eef1da;
+  --chatszin: #d5e5d5;
+  --betuszin: #2c3e50;
+}
+
+body {
+  background: var(--hatter);
+  color: #2c3e50;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+  margin-top: 60x;
+  letter-spacing: 2px;
+  padding-top: 70px; 
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--navbarkek);
+  left: 0;
+  padding: 3px;
+  font-size: 40px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  z-index: 1000;
+}
+nav a {
+  font-weight: bold;
+}
+
+
+.fiok {
+  float: right;
+  margin-right: 15px;
+}
+
+a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+a:hover {
+  color: #34495e;
+}
+
+a:active {
+  color: #000000;
+}
+
+h1 {
+  font-size: 80px;
+  font-variant: small-caps;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 50px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+form {
+  background-color: var(--elemek);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border: 3px solid black;
+}
+
+label {
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+b {
+  width: 100%;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  display: inline-block;
+  font-size: 25px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 50%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #2c3e50;
+  color: #2c3e50;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: 3px solid black;
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--chatszin);
+  color: #2c3e50;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #c7d9dd;
+}
+
+input[type="submit"]:active {
+  background-color: #d5e5d5;
+}
+
+#tipus {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiba {
+  text-align: center;
+  color: red;
+}
+
+#tipuscim {
+  font-size: 35px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+#profilinfo {
+  background-color: #eef1da;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  width: 400px;
+  text-align: left;
+  margin: auto;
+}
+
+#profilinfo p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+#profilinfo b {
+  font-size: 20px;
+  color: #34495e;
+}
+
+#gombok {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.fiok_gomb {
+  padding: 15px;
+  margin-left: 0;
+  background-color: #c7d9dd;
+  color: #2c3e50;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+table {
+  text-align: center;
+  width: 80%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+}
+
+th {
+  background-color: #c7d9dd;
+  color: #2c3e50;
+  padding: 15px;
+  border-bottom: 2px solid #d5e5d5;
+}
+
+td {
+  padding: 15px;
+  font-size: 16px;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #eef1da;
+}
+
+tr:nth-child(odd) {
+  background-color: #d5e5d5;
+}
+
+#torles {
+  background: none;
+  box-shadow: none;
+}
+
+.jelolesek
+{
+  width: 100%;
+
+}
+.container
+{
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  padding: 10px;
+  width: 100%;
+  justify-items: center;
+  gap: 5px;
+}
+.container > div {
+  background-color:var(--elemek);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 150px;
+  border: 3px solid black;
+  font-size: large;
+}
+
+.adatok img{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.button-block
+{
+  display: grid;
+}
+.gomb{
+  background-color: var(--navbarkek);
+  border: 3px solid black;
+}
+.gomb:hover{
+  background-color: var(--chatszin);
+  transform: scale(1.1) perspective(1px)
+}
+#jelentesek-section {
+  margin: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+#jelentesek-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#jelentesek-section th, #jelentesek-section td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#jelentesek-section th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#jelentesek-section tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.action-buttons {
+  white-space: nowrap;
+}
+
+.accept-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.accept-btn:hover {
+  background-color: #45a049;
+}
+
+.reject-btn:hover {
+  background-color: #d32f2f;
+}

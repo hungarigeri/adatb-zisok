@@ -1,0 +1,192 @@
+:root {
+    --navbarkek: #adb2d4;
+    --hatter: #c7d9dd;
+    --elemek: #eef1da;
+    --chatszin: #d5e5d5;
+    --betuszin: #2c3e50;
+  }
+  
+.beszelgetes-container {
+    display: flex;
+    height: calc(100vh - 60px);
+    margin-top: 20px;
+}
+
+.beszelgetes-partnerek {
+    width: 360px;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.beszelgetes-ablak {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.partner-lista {
+    margin-top: 15px;
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.partner:hover, .partner.active {
+    background-color: #f0f0f0;
+}
+
+.partner img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.beszelgetes-fejlec {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.uzenet {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+.sajat-uzenet {
+    background-color: #dcf8c6;
+    margin-left: auto;
+    text-align: right;
+}
+
+.partner-uzenet {
+    background-color: #f1f0f0;
+    margin-right: auto;
+}
+
+.uzenet-datum {
+    font-size: 0.8em;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}
+
+.uzenet-kuldes {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.uzenet-kuldes textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.uzenet-kuldes button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.uzenet-kuldes button:hover {
+    background-color: #365899;
+}
+
+.delete {
+    background-color: #365899 ;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete:hover {
+    background-color: #cc0000;
+}
+
+/* Módosítás gomb stílusai */
+.modosit {
+    background-color: var(--navbarkek);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.modosit:hover {
+    background-color: var(--hatter);
+}
+
+/* Módosítás űrlap stílusai */
+.modosit-input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.modosit-gombok {
+    margin-top: 5px;
+    text-align: right;
+}
+
+.mentes {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.megsem {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mentes:hover {
+    background-color: #45a049;
+}
+
+.megsem:hover {
+    background-color: #d32f2f;
+}
+
+.allapot {
+    font-size: 0.8em;
+    opacity: 0.8;
+    color: #d32f2f;
+    margin-right: 5px;
+}
